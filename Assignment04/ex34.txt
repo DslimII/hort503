@@ -1,0 +1,39 @@
+PS C:\Users\dslim\hort503> python
+Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> animals = [ 'bear' ,  'python3.6' ,  'peacock' , 'kangaroo' , 'whale' , 'platypus']
+>>> The animal at 1.
+  File "<stdin>", line 1
+    The animal at 1.
+             ^
+SyntaxError: invalid syntax
+>>> The animals at 1.
+  File "<stdin>", line 1
+    The animals at 1.
+              ^
+SyntaxError: invalid syntax
+>>> #The animal at 1.
+...
+>>> animals[0]
+'bear'
+>>> #The third(3rd) animal.
+...
+>>> animals[2]
+'peacock'
+>>> #The first(1st) animal.
+...
+>>> animals[0]
+'bear'
+>>> animals[2]
+'peacock'
+>>> animals[4]
+'whale'
+>>> animals[1]
+'python3.6'
+>>> animals[5]
+'platypus'
+>>> animals[3]
+'kangaroo'
+>>> animals[:]
+['bear', 'python3.6', 'peacock', 'kangaroo', 'whale', 'platypus']
+>>>
