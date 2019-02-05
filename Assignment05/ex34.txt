@@ -1,0 +1,35 @@
+PS C:\Users\dslim\hort503\Assignment05> python
+Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> animals = ['bear' , 'python3.6' , 'peacock' , 'kangaroo' , 'whale' , 'platypus']
+>>> #The animal at 1
+...
+>>> animal[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'animal' is not defined
+>>> animals[1]
+'python3.6'
+>>> #The third(3rd) animal.
+... animals[2]
+'peacock'
+>>> #The fist(1st) animal.
+... animals[0]
+'bear'
+>>> #the animal at 3.
+... animals[3]
+'kangaroo'
+>>> #The fifth(5th) animal.
+... animals[4]
+'whale'
+>>> #The animal at 2.
+... animals[2]
+'peacock'
+>>> #the sixth(6th) animal.
+... animals[5]
+'platypus'
+>>> #The animal at 4.
+... animals[4]
+'whale'
+>>>
