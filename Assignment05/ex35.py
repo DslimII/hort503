@@ -2,7 +2,8 @@ from sys import exit
 
 def gold_room():
     print("This room is full of gold.  How much do you want to take?")
-
+#This code is broke, if you used 10p it would passself.
+# if is_int(choice) is a function that returns true or false
     choice = input(">  ")
     if "0" in choice or "1" in choice or "2" in choice or "3" in choice or "4" in choice:
         how_much = int(choice)

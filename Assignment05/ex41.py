@@ -80,5 +80,5 @@ try:
             print(question)
             input("> ")
             print(f"ANSWER:  {answer}\n\n")
-except E0FError:
+except EOFError:
     print("\nBye")
