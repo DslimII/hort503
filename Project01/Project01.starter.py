@@ -78,11 +78,6 @@ def trim_read_front(read, min_q, min_size):
     :rtype: a list with four elements
     """
 
-
-
-#
-# The main function for the script.
-#
 def main(argv):
 
     fq = input_fq
@@ -100,11 +95,11 @@ def main(argv):
     end = input_count
     step = 1
 
-    with open (fq, 'r') as f:
+    with open (fq, 'r') as file:
         filtered_seq_list = list()
 
         while start <= end:
-            single_read = get_read(f)
+            single_read = get_read(file)
             clean_read_file = trim_read_front(single_read, min_q, min_size)
 
             if not clean_read_file:
@@ -114,10 +109,10 @@ def main(argv):
             filtered_seq_list.append(clean_read_file)
             start += step
 
-    with open (filtered_fq, 'w+') as f:
+    with open (filtered_fq, 'w+') as file:
         for x in filtered_seq_list:
-            f.write('\n'.join(x))
-            f.write('\n')
+            file.write('\n'.join(x))
+            file.write('\n')
 
     print(f"{input_count} reads were found")
 
@@ -150,5 +145,4 @@ def main(argv):
        - An integer indicating how large a read's nucleotide sequence must
          be after trimming in order to keep it.
     """
-# Begin the program by calling the main function.
 main(argv)
